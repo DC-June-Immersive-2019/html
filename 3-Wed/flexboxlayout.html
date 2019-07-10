@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        nav {
+            display:flex;
+            background-color: cornflowerblue;
+            justify-content: space-between
+        }
+        nav ul {
+            display:flex;
+            list-style: none;
+            flex-direction: row;
+            justify-content: flex-end;
+            padding:10px; margin:0;
+        }
+      
+        nav li {
+            padding-right:5px;       
+            margin:0;    
+
+        }
+        nav a {
+            text-decoration: none;
+            color:#fff;
+        }
+        main {
+            display:flex;
+            justify-content: space-between;
+        }
+        aside {
+            background-color:blanchedalmond;
+            order: 1;
+        }
+        article {
+            order:2;
+            flex-grow:3;
+        }
+        aside:last-child{
+            order:3;
+        }
+    </style>
+</head>
+<body>
+<nav>
+    <ul>
+        <li><a class="one" href="#">Company Name</a></li>
+    </ul>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+<main>
+    <article>
+            <p>Put Content Here</p>
+            <a href="index.html">Return Home</a>
+    </article>
+    <aside>
+            <h2>Left Sidebar</h2>
+            <p>Put your content here</p>
+    </aside>
+    <aside>
+            <h2>Right Sidebar</h2>
+            <p>Put your content here</p>
+    </aside>
+</main>
+
+
+
+<style>
+.inputs {
+    width:600px;
+}
+.inputs div { 
+    display:flex;
+    margin-bottom:10px;
+}
+.inputs span, .inputs button {
+    border:1px solid #ddd;
+    background-color:#eee;
+    width:75px;
+    text-align: center;
+    padding:5px;
+}
+.inputs input {
+    width:200px;
+    flex-grow:1;
+}
+</style>
+<div class="inputs">
+        <h2>Input Addon</h2>
+        <p>With FlexBox it is easy to place an add-on to the start of an input or
+            a button to the end of an input. An add-on can be text or an image. An add-on
+            is used to explain to a user what type of information should be put in the
+            input field.</p>
+        <hr>
+        <h3>Example of Addon</h3>
+        <div>
+            <span>Amount</span>
+            <input>
+        </div>
+        <div>
+            <input>
+            <button>Submit</button>
+        </div>
+        <div >
+            <span>Amount</span>
+            <input>
+            <button>Submit</button>
+        </div>
+</div>
+</body>
+</html>
